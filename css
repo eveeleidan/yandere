@@ -1,0 +1,1435 @@
+/* ========================================
+   🌸 ШРИФТИКИ И КУРСОР
+   ======================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Press+Start+2P&family=Tektur:wght@400..900&display=swap');
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  src: url("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/webfonts/fa-solid-900.eot");
+  src: url("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"),
+       url("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/webfonts/fa-solid-900.woff2") format("woff2"),
+       url("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/webfonts/fa-solid-900.woff") format("woff"),
+       url("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/webfonts/fa-solid-900.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: block;
+}
+
+body {
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.navbar-light .navbar-brand, .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+    font-family: "Press Start 2P";
+    font-size: 22px;
+}
+
+h5 {
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.post-title, h1 {
+    font-family: "Tektur";
+    font-size: 26px;
+    font-weight: bold;
+}
+
+h3.left-menu-text {
+    font-family: "Tektur";
+    font-size: 18px;
+    color:#484848;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #383838;
+}
+
+.crumb-item {
+    font-family: "Tektur";
+    font-weight: bold;
+    font-size: 24px;
+    padding: .2em .4em .2em 0;
+    text-decoration: none;
+    color: #333333;
+}
+
+div.crumbs {
+    font-family: "Tektur";
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333333;
+}
+
+* {cursor: url(https://i1.beon.fun/58/91/9158/78/1834478/cursor-8-1.png),auto;}
+
+/* ========================================
+   🌸 ОСНОВНОЙ КОНТЕЙНЕР И ФОН
+   ======================================== */
+
+div#app {
+    width: 90%;
+}
+
+div#app {
+    padding: 0;
+    margin: auto;
+}
+
+body.bodybg {
+    background: url(https://i1.beon.fun/27/80/8027/81/1939381/fon-svetlyy.png) repeat fixed;
+}
+
+.content {
+    position: relative;
+    padding: 10px;
+    padding-left: 30px;
+    z-index: 2;
+}
+
+main.py-4 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding-left: 35px;
+    width: 88%;
+}
+
+::selection {
+    background: #a09797;
+    color: #fff;
+}
+
+div#footer, .footer__infolinks.p-1, div#app+div+[style="text-align: center"], div#page__rendertime.p-1, .text-center {
+    font-size:0;
+}
+
+a, div {
+   text-decoration: unset!important;
+   color:#000;
+   transition: .1s;
+}
+
+a:hover {
+   text-decoration: unset!important;
+   color:#000;
+   transition: 0.2s;
+}
+
+/* ========================================
+   🌸 ПАНЕЛЬ(ХЕХЕ) ДЕЙСТВИЙ И СТАТУСЫ
+   ======================================== */
+
+.row.w-100 {
+    position: sticky;
+    top: 100%;
+    margin: auto;
+}
+
+.comment-text+div {
+    position: sticky;
+    top: 100%;
+    text-align: end;
+    padding: 3px;
+}
+
+.liked .fas, .reposted .fas, .bookmarked .fas {
+    color: #242021!important;
+}
+
+.post-text a, .comment-text a, span[data-target="#deleteconfirmmodal"]   {
+    color: #706c6c;
+    transition: .3s;
+}
+
+.post-text a:hover, .comment-text a:hover, span[data-target="#deleteconfirmmodal"]:hover {
+    color:#000;
+    transition: .3s;
+}
+
+/* ========================================
+   🌸 МЕНЮШЕЧЬКА СЛЕВА
+   ======================================== */
+
+.left-menu {
+    width: 25%;
+}
+
+.blog__iread, .blog__last-comments, .pagination-goto,  .blog__gifts,
+.blog__gifts,
+.community__moders,
+.community__members,
+.blog__read-me,
+.blog__tags,
+.post-content.blog_total_counter,
+.tag:before, .flag, [src="//beon.fun/i/offline.png"],
+.post-title-date+a, [src="/i/logo2-deer.png"]   {
+    display:none;
+}
+
+h3.left-menu-text {
+    background: transparent!important;
+}
+
+div.left-menu__user-notification.left-menu__unread-message > p {
+    margin-bottom: 10px;
+}
+
+.left-menu > div {
+    margin-bottom: 15px!important;
+    background: white;
+    border: 2px solid #383838;
+    border-radius: 5px;
+}
+
+.left-menu:before {
+    content:'';
+    display: block;
+    height: 200px;
+    background: url(https://i1.beon.fun/27/80/8027/83/1938383/2-kopiya.png) no-repeat  top center;
+    background-size: cover;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 2px solid #383838;
+}
+
+div.left-menu {
+    border: none;
+    padding:5px;
+}
+
+.blog__about.mb-3 h3.left-menu-text {
+    font-size: 0px;
+    margin-top: 15px;
+    background: transparent !important;
+    border-bottom: 2px solid #838383;
+}
+
+.blog__about  [href="/design/disable"] {
+    color: #776e6e !important;
+}
+
+/* ========================================
+   🌸 ПОСТЫ И КОММЕНТАРИИ
+   ======================================== */
+
+.post-text {
+    min-height: 100px;
+}
+
+div#usermenu {
+    position: absolute;
+    z-index: 9999;
+}
+
+span.post-title-date+span {
+    font-size:0px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+span.comments_count span {
+    font-size:0;
+}
+
+span.comments_count span:before {
+    content: "\f044";
+    font-size: 17px;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400;
+    padding-left: 3px;
+}
+
+.comments_count a {
+    font-size: 17px!important;
+    padding-left: 5px;
+    font-weight: 400;
+    font-weight: bold;
+}
+
+.post__mood, .post__musicplay, .post__wish, .post__tags-list {
+    color: #242021 !important;
+}
+
+[class="post-opt col-12 col-md-6"] span, .post-opt a, [onclick="deleteComment(this)"]  {
+    color: #706c6c;
+    transition: .3s;
+}
+
+[class="post-opt col-12 col-md-6"] span:hover,  .post-opt a:hover, [onclick="deleteComment(this)"]:hover {
+    color: #000;
+    transition: .3s;
+}
+.fa-retweet::before, .fa-bookmark::before, .fa-exclamation-triangle::before, .fa-quote-left::before  {
+    color: #706c6c;
+    padding: 3px;
+    transition: .5s;
+}
+
+.fa-heart:hover:before, .fa-retweet:hover:before, .fa-bookmark:hover:before, .fa-exclamation-triangle:hover:before, .fa-quote-left:hover:before  {
+    color: #000;
+    cursor:pointer;
+    transition: .2s;
+}
+
+.post-opt [style="font-size: 1rem;"] {
+    font-size: 14px!important;
+}
+
+.post-text:before, .comment-text:before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 100%;
+    top: 31px;
+    border-top: 1px solid transparent;
+    border-right: 15px solid #272626;
+    border-bottom: 10px solid transparent;
+}
+
+.post-content > div:first-child {
+    margin-left: 150px !important;
+    margin-right: 0px !important;
+    text-align: end;
+    border-radius: 5px 5px 0 0;
+    margin: -11px 0 -3px -10px;
+    padding-right: 7px;
+    padding-bottom: 1px;
+    color: #484645;
+    background-image: linear-gradient(180deg, transparent 1px, #88888880 1px);
+    background-repeat: no-repeat;
+    background-size: 100% 65%;
+    background-position: 0.5em 100%;
+    text-shadow: 1px 1px 0 #f8f3e880;
+}
+
+div.post-base.d-flex.flex-column.w-100, .comment-base {
+    position: relative;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 2px solid #272626;
+    border-radius: 5px 5px 5px 5px;
+    margin: 0px 0px 0px 25px !important;
+}
+
+div.post-content.post-page > div.post-header {
+    margin-left: 139px !important;
+    margin-right: 0px !important;
+    border-radius: 5px 5px 0 0;
+    margin: -11px 0 -3px -10px;
+    padding-right: 7px;
+    padding-bottom: 1px;
+    color: #484645;
+    background-image: linear-gradient(180deg, transparent 1px, #888888 1px);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0.5em 100%;
+    text-shadow: 1px 1px 0 #f8f3e880;
+}
+
+.comment-content > div:first-child {
+    margin-left: 150px!important;
+    margin-right: 0px !important;
+    border-radius: 5px 5px 0 0;
+    margin: -11px 0 -3px -10px;
+    padding-left: 13px;
+    padding-bottom: 1px;
+    color: #484645;
+    background-image: linear-gradient(180deg, transparent 1px, #888888 1px);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0.5em 100%;
+    text-shadow: 1px 1px 0 #f8f3e880;
+}
+
+h2 {
+    margin-left: 160px!important;
+    margin-right: 10px !important;
+    border-radius: 5px 5px 0 0;
+    margin: -11px 0 -3px -10px;
+    padding-left: 13px;
+    padding-bottom: 1px;
+    color: #484645;
+    background-image: linear-gradient(180deg, transparent 1px, #888888 1px);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0.5em 100%;
+    text-shadow: 1px 1px 0 #f8f3e880;
+}
+
+.post-content, .comment-content {
+    min-height: auto;
+    margin: 0px 10px 30px !important;
+}
+
+.post-avatar img {
+    border: 2px solid #363636;
+    background: #363636;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.sign {
+    color: rgb(255 255 255);
+    border: 2px solid #363636;
+    background: #363636;
+    border-radius: 0px 0px 5px 5px;
+    font-size: 13px;
+}
+
+.quotation {
+    border-left: 2px double #000000;
+    color: #000000;
+    background: #47414129;
+    padding-left: 10px;
+    margin-left: 15px;
+    margin-bottom: 0;
+    padding-top: 4px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.text-right .load_ignored_comments {
+    display: block;
+    margin-top: -1px;
+    margin-bottom: -11.5px;
+    border-radius: 5px 5px 0 0;
+    padding-right: 7px;
+    padding-bottom: 1px;
+    color: #000000;
+    background-image: linear-gradient(180deg, transparent 1px, #888888 1px);
+    background-repeat: no-repeat;
+    background-position: 10.1em 100%;
+    text-shadow: 1px 1px 0 #f8f3e880;
+}
+
+[style="display: flex; justify-content: space-between;"] {
+    border-radius: 5px 5px 0 0;
+    padding-right: 7px;
+    padding-bottom: 1px;
+    color: #5c5a59;
+    background-image: linear-gradient(180deg, transparent 1px, #888888 1px);
+    background-repeat: no-repeat;
+    background-position: 10.1em 100%;
+    text-shadow: 1px 1px 0 #f8f3e880;
+}
+
+.small-text {
+    font-size:0;
+}
+
+.small-text+div {
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+h1 {
+    margin-left: 139px !important;
+    margin-right: 0px !important;
+    text-align: end;
+    border-radius: 5px 5px 0 0;
+    margin: -11px 0 -1px -8px;
+    padding-right: 7px;
+    padding-bottom: 1px;
+    color: #323232;
+    background-image: linear-gradient(180deg, transparent 1px, #888888 1px);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0.3em 100%;
+    text-shadow: 1px 1px 0 #f8f3e880;
+}
+
+.post-title, h1 {
+    font-size: 26px;
+    color: #353333;
+    margin-right: 7px;
+}
+
+/* ========================================
+   🌸 КОНТЕЙНЕРЫ ВСЯКИЕ НО НЕ ОТ ЕДЫ И ЗАГОЛОВКИ
+   ======================================== */
+
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 140px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.post-content.post-page .container-fluid .row {
+    margin-left: 115px;
+}
+
+.container-fluid .row {
+    margin-left: 0px;
+}
+
+h2, .comment-box__message-partial.comment-content {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: #363636;
+}
+.post-title-date {
+    font-size: 10px;
+    color: #433b3b;
+    font-weight: bold;
+    padding-left: 0;
+    letter-spacing: 1px;
+}
+
+/* ========================================
+   🌸 МЕНЮ ПОЛЬЗОВАТЕЛЯ
+   ======================================== */
+
+.user-drop-menu {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#usermenu {
+    border-radius: 5px;
+    border: 2px solid #313131;
+}
+
+/* ========================================
+🌸 СВОРАЧИВАНИЕ ОГРОМНЫХ СОО ПОД СКРОЛЛБАР
+======================================== */
+
+.left-menu__user-notification.left-menu__unread-message img+p {
+    font-size: 14px;
+    overflow: auto;
+    line-height: normal;
+    max-height: 140px;
+    margin-top: 10px;
+}
+
+/* ========================================
+🌸 СКРОЛЛБАР КСТАТИ
+======================================== */
+
+::-webkit-scrollbar {
+    width: 17px;
+    height: 17px;
+    background-color: #363636;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 6px solid #363636; 
+    background-color: #88888880;
+    min-height: 24px;
+    min-width: 24px;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    border: 8px solid #363636;
+    background-color: #88888880;
+}
+
+/* ========================================
+   🌸 ПАГИНАЦИЯ
+   ======================================== */
+
+.pagination a {
+    color: #404040;
+    font-family: "Tektur";
+}
+
+.pagination {
+    font-family: "Tektur";
+    float: right;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    color: #2b2b2b;
+    background-image: linear-gradient(180deg, transparent 1px, #888888 1px);
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
+    background-position: .5em 100%;
+    text-shadow: 1px 1px 0 #f8f3e880;
+}
+
+/* ========================================
+   🌸 БУЛОЧНОВЫЕ КРОШКИ
+   ======================================== */
+
+.crumbs {
+    padding: 0 5%;
+    padding-right: 30px;
+    border-bottom: 2px dashed #838383;
+    margin-left: 35px;
+    margin-right: 180px;
+}
+
+.crumb-item:before {
+    content: '';
+    display: block;
+    float: left;
+    margin-left: -60px;
+    width: 32px;
+    height: 32px;
+    background: url(https://i1.beon.fun/27/80/8027/92/1938492/tumblr_m76guri4PQ1ql2gz1540.gif) no-repeat;
+    background-size: contain;
+    filter: drop-shadow(2px 4px 0px #4a4a4a1a);
+}
+
+.crumb-item {
+    background-image: linear-gradient(180deg, transparent 1px,  #888888 1px);
+    background-repeat: no-repeat;
+    background-size: 100% 40%;
+    background-position: 0.5em 85%;
+    text-shadow: 1px 1px 0 #f8f3e880;
+}
+
+/* ========================================
+   🌸 ДАТЫ
+   ======================================== */
+
+.datebg {
+    margin: 10px 10px 20px;
+    padding-left: 5px;
+    font-size: 15px;
+    display: block;
+    text-align: right;
+    margin-left: 153px;
+    color: #333333;
+    text-shadow: 1px 1px 0 #f8f3e880;
+    border-bottom: 1px dashed #838383;
+}
+
+.datebg:after {
+    content: "\f02d";
+    font-family: 'Font Awesome 5 Free';
+    font-size: 15px;
+    text-align: center;
+    margin-left: 8px;
+    border-radius: 3px;
+}
+
+/* ========================================
+   🌸 СТРЕЛОЧКИ ВВЕРХ ВНИЗ
+   ======================================== */
+
+[href="#footer"] {
+    font-size: 0px;
+}
+
+[href="#footer"]:before {
+    content: ' ';
+    background: url(https://i1.beon.fun/27/80/8027/5/1938505/vniz.png) no-repeat !important;
+    position: fixed;
+    color: #000 !important;
+    height: 100px;
+    width: 61px;
+    right: 4.5%;
+    top: 26%;
+    z-index: 4;
+}
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"] {
+    font-size: 0px;
+    text-shadow: unset !important;
+}
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"]:before {
+    content: 'пп';
+    position: fixed;
+    background: url(https://i1.beon.fun/27/80/8027/4/1938504/vverh.png) no-repeat !important;
+    height: 100px;
+    width: 61px;
+    right: 4.5%;
+    bottom: 26%;
+    z-index: 4;
+}
+
+/* ========================================
+   🌸 УВЕДОМЛЕНИЯ И ФОРМЫ
+   ======================================== */
+
+.alert-success {
+    font-size: 15px;
+    text-align: center;
+    color: #000;
+    background:#fff;
+    border: 2px solid #000;
+    font-weight: bold;
+}
+
+/* ========================================
+   🌸 ПОЛЯ ВВОДА И КНОПКИ
+   ======================================== */
+
+.left-menu [type="text"], .left-menu [type="submit"] {
+    border-radius:0;
+}
+
+input, select, .btn-outline-primary, .textareabg input[type="submit"], .textareabg input[type="button"], button.btn.btn-secondary, button.btn.btn-primary, input.w-100.input-tags, input.w-100.input-mood, input.w-100.input-music, input.w-100.input-want  {
+    background: #adacac7a ;
+    border: 1px solid #000;
+    border-radius:5px;
+    color: #000;
+    font-weight: 100;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+input:hover, select:hover,
+.btn-outline-primary:hover,
+.textareabg input[type="submit"]:hover,
+.textareabg input[type="button"]:hover,
+button.btn.btn-secondary:hover,
+button.btn.btn-primary:hover,
+input.w-100.input-tags:hover, input.w-100.input-mood:hover,
+input.w-100.input-music:hover,
+input.w-100.input-want:hover {
+    background: #fff;
+    border-radius:5px;
+    color: #000;
+    transition: 0.4s;
+}
+
+/* ========================================
+   🌸 АВАЧЬКИ
+   ======================================== */
+
+.avatars-fullscreen-link-wrapper {
+    background: #ffffff;
+    z-index: 2;
+}
+ #avatars-fullscreen-modal .modal-content {
+    max-height: 90vh;
+    width: 65%;
+    margin: auto;
+}
+
+.avatar-select-list::-webkit-scrollbar {
+    background: #fff;
+}
+.avatar-select-list {
+    background: transparent;
+    text-align: center;
+    overflow-y: scroll;
+}
+
+.avatar-select-label {
+    margin: 2px;
+    width: 95px;
+    border-radius: 5px;
+    border: 3px solid #7c7c7c;
+    transition: 0.3s;
+}
+
+.avatar-select-label-selected {
+    width: 100px;
+    border: 3px solid #262626;
+    transition: 0.3s;
+}
+
+/* ========================================
+🌸 НАВИГАЦИОННОЕ МЕНЮ НУ ТО КОТОРОЕ СВЕРХУ
+======================================== */
+
+.pc-menu {
+    display:none;
+}
+
+.shadow-sm {
+    box-shadow: none!important;
+}
+
+.bg-white {
+    background-color: #fff0;
+}
+
+.navbar-light .navbar-brand, .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+    font-size: 32px;
+    text-transform: uppercase;
+    margin: 10px 40px 20px;
+    margin-left: 40px;
+    padding: .2em .4em .2em 0;
+    color: #2b2b2b;
+    background-image: linear-gradient(180deg, transparent 1px,  #888888 1px);
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    background-position: 0.5em 80%;
+    text-shadow: 1px 1px 0 #f8f3e880;
+}
+
+.m2 {
+    font-size:0;
+}
+
+.navbar>.container-fluid {
+    background: url(https://i1.beon.fun/27/80/8027/43/1939443/3.png) no-repeat center;
+    background-size: contain;
+    height: 140px;
+}
+
+ .menu__btn > span, .menu__btn > span::before, .menu__btn > span::after {
+    display: none;
+}
+
+label.menu__btn:before { 
+    content: '\f004'; 
+    font-size: 23px; 
+    line-height: 2px; 
+    margin-top: 1px; 
+    margin-left: 1px; 
+    color: #cccccc; 
+    font-weight: 400;
+    font-family: 'Font Awesome 5 Free'; 
+    transition: 0.5s; 
+} 
+
+label.menu__btn:hover:before {
+    content: '\f004';
+    font-size: 23px;
+    line-height: 2px;
+    margin-top: 1px;
+    margin-left: 1px;
+    color: #cccccc;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    transition: 0.5s;
+}
+
+.hamburger-menu {
+    display: block;
+    position: absolute;
+    left: 380px;
+    width: 50px;
+    height: 50px;
+    background: #797979;
+    border-radius: 50px;
+    padding-left: 12px;
+    padding-top: 12px;
+    z-index: 3;
+    transition: 0.4s;
+}
+
+.menu__box {
+    z-index: 4;
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-120%);
+    top: 100px;
+    left: 20.5%;
+    width: 250px;
+    height: 50%;
+    margin-top: 10px;
+    padding: 10px 10px;
+    list-style: none;
+    background-color: #ffffff;
+    border: 2px solid #383838;
+    border-radius: 7px;
+    box-shadow: none;
+    transition:
+        transform 0.4s ease,
+        opacity 0.4s ease,
+        visibility 0.4s;
+}
+
+ul.menu__box::-webkit-scrollbar {
+    width: 0px;
+}
+
+#menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+a.menu__item {
+    color: #848484;
+    line-height: 1.4;
+    padding: 0px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+}
+
+.menu__item:hover {
+    background-color: #dbdbdb;
+    color: #000;
+    transition-duration: unset;
+    transition: 0.2s;
+}
+
+/* ========================================
+   🌸 ФОРМА НОВОГО ПОСТА И ОТВЕТА
+   ======================================== */
+
+#newpostform .container-fluid {
+    padding-left: 0;
+}
+
+.textareabg {
+    padding: 10px !important;
+    background-color: #ffffff;
+    border: 2px solid #383838;
+    box-shadow: 2px 5px 4px 2px #6d6d6d1a;
+    border-radius: 5px 5px 5px 5px;
+    margin-right: 8px;
+}
+textarea {
+    background: #fff;
+    border: 2px solid #383838;
+    border-radius: 5px;
+    color: #000;
+    font-weight: bold;
+}
+
+div#newpostform br,div#newpostform br+br+p {
+    display: none;
+}
+
+span.emj-dropdown {
+    padding: 0px;
+}
+form.messageform p {
+    margin-bottom: 0px;
+}
+
+.container-fluid {
+    padding-left: 0px;
+}
+
+.container-fluid.mt-5 {
+    margin-top: 0px !important;
+    padding-left: 0px!important;
+}
+
+/* ========================================
+   🌸 ДОПОЛНИТЕЛЬНЫЕ ЭЛЕМЕНТЫ ФОРМ
+   ======================================== */
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000;
+    font-size: 20px;
+}
+
+.emj-dropdown {
+    padding: 0px;
+}
+
+.tag_bar {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-size: 16px;
+}
+
+.tag_bar > span {
+    display: inline-block;
+    min-width: 15px;
+}
+
+.emj-dropdown-content {
+    width: 50%;
+    height: 35%;
+    max-height: 200px;
+    background:#fff;
+    border: 2px solid #383838;
+}
+
+/* ========================================
+   🌸 МОДАЛОЧЬКА
+   ======================================== */
+
+.modal-body {
+    color: #000;
+    position: relative;
+}
+
+.modal-content {
+    background: #fff;
+    border: 2px solid #383838;
+    font-weight: bold;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+.user_footer, .div_user_img {
+    border: 2px solid #383838;
+}
+
+/* ========================================
+   🌸 ПЛЕЕР В МЕНЮШЕЧЬКЕ
+   ======================================== */
+
+div#beon-fnplayer {
+    padding: 10px;
+    background: transparent;
+}
+
+#fnplayer-slider > span {
+    font-size:0px!important;
+}
+
+#fnplayer-slider {
+    height: 4px;
+    border-radius: 10px;
+    background-color: #b6b6b6 !important;
+}
+
+#fnplayer-slider-inner {
+    height: 4px;
+    width: 0%;
+    background-color: #5f5f5f;
+}
+
+#fnplayer-volume-inner {
+    height: 4px;
+    width: 100%;
+    background-color: #b6b6b6 !important;
+    border: none;
+}
+
+#fnplayer-volume-inner {
+    height: 4px;
+    width: 100%;
+    background-color: #5f5f5f !important;
+    border: none;
+}
+
+#fnplayer-volume-mask {
+    border:none!important;
+}
+
+#fnplayer-stop {
+    display:none;
+}
+
+#fnplayer-play {
+    border-color: transparent transparent transparent #5f5f5f !important;
+    margin-right: -6px;
+}
+
+#fnplayer-volume {
+    display: flex;
+    align-items: flex-end;
+    height: 4px;
+    width: 30px;
+    background-color: #b6b6b6;
+    cursor: pointer;
+}
+
+/* ========================================
+🌸 ПЛЕЕР В ПОСТАХ
+======================================== */
+
+.podcast-player {
+    border: 1px solid #383838;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 95%;
+    padding: .5em;
+    background: #fffffd;
+    background-image: url(https://i1.beon.fun/27/80/8027/16/1936916/fon.png);
+    background-size: auto;
+}
+
+.podcast-player__title > * {
+    vertical-align: middle;
+}
+
+.podcast-player__title img {
+    display: none !important;
+}
+
+.podcast-player__title a {
+    color: #383838;
+    text-decoration: none !important;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+    padding-left: 5px;
+}
+
+.podcast-player__title a:hover {
+    color: #383838;
+    text-shadow: 0 0 7px #838383;
+}
+
+.podcast-player__controls {
+    gap: 0.5rem;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.podcast-player__seek-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    flex-grow: 1;
+    height: 6px;
+    background: #383838;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0 5px;
+    order: 0;
+}
+
+.podcast-player__seek-slider::-webkit-slider-runnable-track {
+    height: 6px;
+    background: #383838;
+    border-radius: 3px;
+    border: none;
+}
+
+.podcast-player__seek-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 3px;
+    height: 16px;
+    background: #383838;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-top: -5px;
+    transition: 0.2s;
+}
+
+.podcast-player__seek-slider::-webkit-slider-thumb:hover {
+    height: 20px;
+    background: #383838;
+}
+
+.podcast-player__seek-slider::-moz-range-track {
+    height: 6px;
+    background: #383838;
+    border-radius: 3px;
+    border: none;
+}
+
+.podcast-player__seek-slider::-moz-range-thumb {
+    width: 3px;
+    height: 16px;
+    background: #383838;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+}
+
+.podcast-player__seek-slider::-moz-range-progress {
+    height: 6px;
+    background: #383838;
+    border-radius: 3px;
+}
+
+.podcast-player__button {
+    color: #383838 !important;
+}
+
+i.fas.fa-volume-up {
+    color: #383838 !important;
+}
+
+i.fas.fa-volume-mute {
+    color: #383838 !important;
+}
+
+.podcast-player__title a:before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(https://i1.beon.fun/27/80/8027/14/1939914/WQhRmHY.gif) no-repeat center;
+    background-size: contain;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+a[onclick="openPodcastModal()"] img {
+    display: none;
+}
+
+a[onclick="openPodcastModal()"] {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+a[onclick="openPodcastModal()"]::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(https://i1.beon.fun/27/80/8027/14/1939914/WQhRmHY.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (max-width: 768px) {
+.podcast-player__controls {
+    flex-wrap: wrap;
+}
+
+.podcast-player__seek-slider {
+    order: 1;
+    width: 100% !important;
+    flex-basis: 100%;
+    margin-top: 5px;
+}
+
+.podcast-player__title a {
+    font-size: 12px;
+}
+
+.podcast-player {
+    max-width: 100%;
+    padding: 0.8em;
+}
+}
+
+/* ========================================
+   🌸 АДАПТАЦИЯ ДЛЯ МАЛЕНЬКОВЫХ ЭКРАНОВ
+   ======================================== */
+
+@media (max-width: 1280px) {
+
+div#app {
+    padding: 0;
+}
+
+main.py-4  {
+    width: 100%!important;
+}
+
+.left-menu {
+    width: unset!important;
+}
+
+.content, main.py-4 {
+    padding-left: 0px!important;
+}
+
+.crumbs {
+    margin-right: 0px!important;
+}
+
+.left-menu > div.mobile_open_menu > h3 {
+    color: #000000!important;
+    font-weight: bold;
+}
+
+.navbar>.container-fluid {
+    margin-right: 0px!important;
+}
+
+.menu__box {
+    height: 550px;
+}
+
+/* ========================================
+   🌸 АДАПТАЦИЯ ДЛЯ АЙПАДКИДОВ
+   ======================================== */
+
+@media (max-width: 1024px) {
+
+[href="#footer"]:before, [onclick="window.scroll({top: 0,behavior: 'smooth'})"]:before  {
+    display:none;
+}
+
+.navbar>.container-fluid {
+    margin-right: 0px!important;
+}
+}
+
+/* ========================================
+   📱 АДАПТАЦИЯ ДЛЯ МОБИЛОК
+   ======================================== */
+
+@media (max-width: 700px) {
+
+.crumbs {
+    margin-left: 42px!important;
+    margin-right: 10px!important;
+}
+
+.left-menu > div.mobile_open_menu > h3 {
+    color: #000000!important;
+}
+
+.datebg {
+    font-size: 12px!important;
+}
+
+.fas, .far {
+    font-size: 0.9rem!important;
+    padding: 0rem!important;
+}
+
+.tag_bar > * {
+    padding: 0rem!important;
+}
+
+.col-12  {
+    padding-left: 8px;
+    font-size: 0.80rem;
+}
+
+span.comments_count span::before {
+    font-size: 12px!important;
+}
+
+span.comments_count a {
+    font-size: 14px!important;
+    margin-right: -20px!important;
+}
+
+.text-right .load_ignored_comments {
+    padding-bottom: 20px !important;
+}
+
+.textareabg {
+    margin-right: 0!important;
+    margin-left: 0!important;
+}
+
+h1, .text-right .load_ignored_comments, [style="display: flex; justify-content: space-between;"] {
+    background-image: none!important;
+}
+
+.fa-lock-open:before {
+     display:none;
+}
+
+.left-menu, .content, div#app {
+    width: 100%!important;
+}
+
+main.py-4 {
+    padding-left: 0!important;
+    width: 100%!important;
+}
+
+.content {
+    padding:0!important;
+    padding-left: 0!important;
+}
+
+.post-avatar img {
+    width: 90px!important;
+}
+
+.post-title, h1 {
+    font-size: 16px!important;
+    display: block;
+}
+
+.comment-content > div:first-child {
+    margin-left: 0!important;
+}
+
+.comment-content > div:first-child {
+    text-align: end;
+}
+
+.comment-content .post-title-date  {
+    display: block;
+    text-align: end;
+}
+
+.post-text:before, .comment-text:before {
+    top: 20px!important;
+}
+
+.pagination {
+    font-size: 18px!important;
+}
+
+.post-content.post-page .container-fluid .row {
+    margin-left: 0px!important;
+}
+
+.navbar>.container-fluid {
+    margin-right: 0px!important;
+    background: url(https://i1.beon.fun/27/80/8027/43/1939443/3.png) no-repeat center;
+    background-size: contain;
+    background-position: center calc(50% + 40px);
+}
+
+#avatars-fullscreen-modal .modal-content {
+    width: 100%!important;
+}
+
+.avatars-fullscreen-link-wrapper {
+    background: #ffffff!important;
+}
+
+.pagination {
+    margin-top: 8px!important;
+ }
+
+.blog__iread, .blog__last-comments, .pagination-goto,  .blog__gifts,
+.community__moders,
+.community__members,
+.blog__gifts,
+.blog__read-me  {
+    display:none!important;
+}
+
+[href="#footer"]:before {
+    display: flex;
+    position: absolute !important;
+    right: 10px;
+    left: auto;
+    width: 35px;
+    height: 35px;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: none !important;
+    background-image: none !important;
+    border: none !important;
+    color: #454545;
+    font-size: 30px;
+    line-height: 35px;
+    z-index: 6;
+    justify-content: center;
+    align-items: center;
+    content: '\25BC';
+    top: 20px;
+}
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"]:before {
+    content: '\25B2';
+    display: flex;
+    position: sticky !important;
+    font-size: 30px;
+    width: 35px;
+    height: 35px;
+    padding-left: 5px;
+    padding-bottom: 1px !important;
+    align-items: center !important;
+    margin-right: 10px !important;
+    margin-left: auto !important;
+    bottom: 65px;
+    color: #454545;
+    background: none !important;
+    background-image: none !important;
+    border: none !important;
+    z-index: 6;
+    transition: 0.3s;
+}
+}
